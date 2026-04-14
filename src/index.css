@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "";
+  src: url("") format("truetype");
+  font-weight: 300 900; /* weight range of a variable font */
+}
+
+:root {
+  --font-primary: "", sans-serif;
+  font-size: 16px; /* 1rem = 16px */
+
+  --font-size-bold-40: 40px;
+  --font-weight-bold-40: 700;
+  --line-height-bold-40: 120%;
+
+  --font-size-bold-24: 24px;
+  --font-weight-bold-24: 700;
+  --line-height-bold-24: 125%;
+
+  --font-size-semi-bold-16: 16px;
+  --font-weight-semi-bold-16: 600;
+  --line-height-semi-bold-16: 150%;
+
+  --font-size-regular-14: 14px;
+  --font-weight-regular-14: 400;
+  --line-height-regular-14: 150%;
+
+  --font-size-semi-bold-14: 14px;
+  --font-weight-semi-bold-14: 600;
+  --line-height-semi-bold-14: 150%;
+
+  --blue-950: hsl(207, 26%, 17%);
+  --blue-900: hsl(209, 23%, 22%);
+  --gray-950: hsl(200, 15%, 8%);
+  --gray-400: hsl(0, 0%, 50%);
+  --gray-350: hsl(0, 0%, 59%);
+  --gray-300: hsl(0, 0%, 70%);
+  --gray-250: hsl(0, 0%, 77%);
+  --gray-100: hsl(0, 0%, 95%);
+  --gray-50: hsl(0, 0%, 99%);
+
+  --black: #000000;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid rgb(200, 200, 200); */
+
+  &:focus-visible {
+    outline: 3px dashed blue;
+    outline-offset: 0;
+  }
+}
+
+body {
+  font-family: var(--font-primary);
+  max-width: 100%; /* Prevents overflow */
+  min-height: 100svh; /* Ensures the body takes up the full viewport height */
+  place-items: center;
+  background-color: var(--gray-100);
+}
+
+/* borrowed from Tailwind */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(
+    50%
+  ); /*  hides the entire element by clipping it from all four sides until the edges meet at the center */
+  white-space: nowrap;
+  border-width: 0;
+}
