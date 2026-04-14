@@ -9,7 +9,7 @@ section {
     font-size: 1.2rem;
   }
 
-  ul {
+  ul.listContainer {
     list-style: none;
     display: flex;
     flex-direction: column;

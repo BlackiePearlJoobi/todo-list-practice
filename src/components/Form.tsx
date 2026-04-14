@@ -26,7 +26,9 @@ const Form = ({ addTask }: FormProps) => {
         onChange={(e) => setName(e.target.value)}
         aria-required="true"
       ></input>
-      <button type="submit">Add</button>
+      <button type="submit" className={styles.addButton}>
+        Add
+      </button>
     </form>
   );
 };

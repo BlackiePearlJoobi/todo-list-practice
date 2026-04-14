@@ -20,7 +20,7 @@ const TaskList = ({
       <h2 id="list-heading" aria-live="polite">
         {tasks.length} {tasks.length === 1 ? `task` : `tasks`} remaining
       </h2>
-      <ul role="list">
+      <ul role="list" className={styles.listContainer}>
         {tasks.map((task) => (
           <TaskItem
             key={task.id}

@@ -118,6 +118,10 @@ li {
 
       .buttonContainer {
         height: 2.75rem;
+
+        button {
+          font-size: 1.25rem;
+        }
       }
     }
 
